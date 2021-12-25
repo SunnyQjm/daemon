@@ -220,7 +220,7 @@ After={{.Dependencies}}
 PIDFile=/var/run/{{.Name}}.pid
 ExecStartPre=/bin/rm -f /var/run/{{.Name}}.pid
 ExecStart={{.Path}} {{.Args}}
-Restart=on-failure
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
